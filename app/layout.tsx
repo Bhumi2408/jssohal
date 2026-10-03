@@ -32,12 +32,9 @@ export const metadata: Metadata = {
     "bakery equipment manufacturer",
     "bread slicing machine Delhi",
   ],
-  openGraph: {
-    title: "J. S. Engineering | Bread Slicing & Bakery Machinery Manufacturer",
-    description:
-      "High-speed bread, toast and cake slicing machines and bakery equipment, engineered in Delhi, India since 1948.",
-    type: "website",
-  },
+  icons:{
+    icon:"/fav.png"
+  }
 };
 
 export default function RootLayout({
