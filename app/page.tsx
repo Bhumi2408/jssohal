@@ -14,6 +14,7 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Clients from "@/components/Clients";
 import CTA from "@/components/CTA";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Floaters from "@/components/Floaters";
 import homeSchema from "@/lib/home-schema.json";
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   description,
   keywords: ["bakery machine manufacturer", "bakery machine manufacturer in Delhi"],
   alternates: { canonical: "/" },
-  openGraph: { title, description, type: "website", url: "/" },
+  openGraph: { title, description, type: "website", url: "/", siteName: "Js Sohal" },
 };
 
 export default function Home() {
@@ -56,6 +57,7 @@ export default function Home() {
       <FAQ />
       <Clients />
       <CTA />
+      <ContactForm />
       <Footer />
       <Floaters />
     </>
