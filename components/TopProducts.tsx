@@ -2,21 +2,6 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import { topProducts, COMPANY } from "@/lib/data";
 
-const range = [
-  {
-    name: "High Speed Bread Slicing Machine",
-    text: "built for continuous production. Depending on the model and configuration, it can slice up to 65 breads a minute.",
-  },
-  { name: "High Speed Toast Slicing Machine", text: "keeps toast thickness even, batch after batch." },
-  { name: "Gravity Bread Slicer", text: "a simple, dependable option for bakeries with limited space." },
-  { name: "Cake Slicing Machine", text: "cuts cake bars and slabs cleanly, without crushing or tearing them." },
-  { name: "Round Roll Slicing Machine", text: "made specially for buns and round rolls." },
-  {
-    name: "Other Bakery Equipment",
-    text: "spiral and planetary mixers, rotary ovens, dough dividers and moulders.",
-  },
-];
-
 function WhatsAppIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -29,16 +14,17 @@ export default function TopProducts() {
   return (
     <section id="products" className="py-24 bg-paper-2">
       <div className="max-w-content mx-auto px-6">
-        <Reveal className="max-w-[640px] mx-auto text-center mb-12">
+        <Reveal className="max-w-[760px] mx-auto text-center mb-12">
           <span className="eyebrow inline-flex items-center gap-2.5 text-[12.5px] tracking-[0.14em] font-semibold text-ember">
             TOP PRODUCTS
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
-            Engineered machines. Proven performance.
+            Explore Our Range of Bakery Slicing Machines
           </h2>
           <p className="text-[15.5px] text-[#5b564d] leading-relaxed">
-            Explore our most demanded bakery machinery, designed for high productivity and
-            consistent results.
+            J. S. Engineering offers specialized bakery machines for businesses with different
+            product processing requirements. Each machine is designed for a particular application,
+            helping bakery businesses identify equipment according to the products they manufacture.
           </p>
         </Reveal>
 
@@ -58,7 +44,7 @@ export default function TopProducts() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-extrabold mb-2 min-h-[56px]">{p.name}</h3>
+                  <p className="font-display text-lg font-extrabold mb-2 min-h-[56px]">{p.name}</p>
                   <p className="text-[13.8px] text-[#5b564d] leading-relaxed mb-4 min-h-[42px]">{p.description}</p>
                   <div className="flex items-center justify-between gap-2.5 border-t border-black/10 pt-4">
                     <a
@@ -84,31 +70,25 @@ export default function TopProducts() {
           ))}
         </div>
 
-        <Reveal className="max-w-[900px] mx-auto mt-20">
-          <h2 className="font-display font-extrabold leading-[1.15] tracking-tight text-[24px] sm:text-[28px] lg:text-[32px] mb-4">
-            What We Make
-          </h2>
-          <div className="space-y-4 text-[15.5px] text-[#4a453e] leading-relaxed">
-            <p>
-              Our range covers most of what a bakery needs on the slicing side, plus some of the heavy
-              equipment too.
-            </p>
-            <ul className="grid sm:grid-cols-2 gap-3">
-              {range.map((item) => (
-                <li key={item.name} className="flex items-start gap-3 bg-white border border-black/10 rounded-md px-4 py-3.5">
-                  <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-ember flex-none" />
-                  <span>
-                    <b className="font-display font-bold text-ink">{item.name}:</b> {item.text}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <p>
-              Some models come in stainless steel too, which is easier to keep hygienic and lasts
-              longer with daily use.
-            </p>
-          </div>
-        </Reveal>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
+          {topProducts.map((p, i) => (
+            <Reveal
+              key={p.name}
+              delay={(i % 2) * 0.06}
+              className="relative bg-white border border-black/10 rounded-2xl p-7 sm:p-8"
+            >
+              <h3 className="font-display font-extrabold text-[19px] sm:text-[21px] leading-snug mb-4 flex items-baseline gap-3">
+                <span className="text-ember text-[15px] tracking-wide">{String(i + 1).padStart(2, "0")}</span>
+                {p.name}
+              </h3>
+              <div className="space-y-3 text-[15px] text-[#4a453e] leading-relaxed">
+                {p.details.map((d) => (
+                  <p key={d}>{d}</p>
+                ))}
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

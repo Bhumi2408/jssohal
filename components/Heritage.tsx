@@ -10,20 +10,31 @@ export default function Heritage() {
             OUR HERITAGE
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
-            Three Generations, One Workshop Tradition
+            About J. S. Engineering – Bakery Machinery Manufacturing Since 1948
           </h2>
           <div className="space-y-4 text-[15.5px] text-[#5b564d] leading-relaxed">
             <p>
-              It all started in 1948, when S. Jaswant Singh Sohal began building bakery machinery in
-              Delhi. In the 1970s, the second generation brought bread slicing innovation into the
-              business and made it a core part of what we do. Today, the third generation runs the
-              company, and the standards haven&apos;t slipped.
+              J. S. Engineering has been associated with bakery machinery manufacturing since 1948.
+              Founded under the guidance of S. Jaswant Singh Sohal, the company has continued its
+              manufacturing journey through three generations. This experience has helped us
+              understand the changing requirements of commercial bakeries and food production units.
             </p>
             <p>
-              Nearly eight decades is a long time to keep learning from bakers. Ovens have changed,
-              tastes have changed and daily volumes have grown. Our machines have had to keep up, and
-              that experience shows in the small details, like how a blade is set or how a frame holds
-              up through a full shift.
+              Located at C-57, Wazirpur Industrial Area, Delhi, our company specializes in bakery
+              machinery for various slicing applications. Over the years, bakery production methods
+              have evolved, and businesses increasingly require equipment that can support regular
+              operations and consistent product preparation.
+            </p>
+            <p>
+              Our approach is based on understanding the purpose of each machine and the requirements
+              of the business using it. From bread and toast slicing to cake and round roll processing,
+              we offer machinery designed for specific bakery applications.
+            </p>
+            <p>
+              As an experienced <strong className="text-ink">Bakery Machine Manufacturer in Delhi</strong>,
+              J. S. Engineering serves businesses looking for specialized bakery equipment and bakery
+              project consultancy. Our manufacturing background and product range make us a suitable
+              company to consider when evaluating machinery for commercial bakery operations.
             </p>
           </div>
         </Reveal>

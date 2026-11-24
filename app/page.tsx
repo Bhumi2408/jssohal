@@ -10,6 +10,7 @@ import Expertise from "@/components/Expertise";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Heritage from "@/components/Heritage";
 import WhoUses from "@/components/WhoUses";
+import SelectionGuide from "@/components/SelectionGuide";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Clients from "@/components/Clients";
@@ -17,18 +18,23 @@ import CTA from "@/components/CTA";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Floaters from "@/components/Floaters";
-import homeSchema from "@/lib/home-schema.json";
+import { homeSchema } from "@/lib/schema";
 
 const title = "Best Bakery Machine Manufacturer in Delhi | J. S. Engineering";
 const description =
-  "Trusted bakery machine manufacturer in Delhi since 1948. J. S. Engineering makes high-speed bread, toast and cake slicers. Get a free quote today.";
+  "J. S. Engineering is a trusted bakery machine manufacturer in Delhi NCR. Explore bread slicers, toast slicers, cake slicing machines and more. Contact us now!";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
-  keywords: ["bakery machine manufacturer", "bakery machine manufacturer in Delhi"],
+  keywords: [
+    "Bakery Machine Manufacturer",
+    "Bakery Machine Manufacturer in Delhi",
+    "Best Bakery Machine Manufacturer in Delhi NCR",
+  ],
   alternates: { canonical: "/" },
-  openGraph: { title, description, type: "website", url: "/", siteName: "Js Sohal" },
+  openGraph: { title, description, type: "website", url: "/", siteName: "J. S. Engineering" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function Home() {
@@ -46,17 +52,19 @@ export default function Home() {
         <Counters />
       </div>
 
+      {/* Section order follows the SEO content brief */}
       <About />
-      <TopProducts />
-      <Expertise />
-      <WhyChooseUs />
       <Heritage />
+      <Expertise />
+      <TopProducts />
+      <WhyChooseUs />
       <WhoUses />
+      <SelectionGuide />
+      <CTA />
       <Testimonials />
       <BakeryIntro />
       <FAQ />
       <Clients />
-      <CTA />
       <ContactForm />
       <Footer />
       <Floaters />

@@ -1,36 +1,36 @@
-import { Scissors, LayoutGrid, CircleDot, Boxes, FileCog } from "lucide-react";
+import { Layers, BarChart3, Ruler, Maximize, Settings } from "lucide-react";
 import Reveal from "./Reveal";
 
 const items = [
   {
     num: "01",
-    icon: Scissors,
-    title: "High-Speed Bread Slicing",
-    desc: "Precision-set blades and high-throughput frames built for accurate, consistent slicing at industrial volumes.",
+    icon: Layers,
+    title: "Product Application",
+    desc: "Identify whether the machine will be used for bread, toast, cakes or round rolls.",
   },
   {
     num: "02",
-    icon: LayoutGrid,
-    title: "Toast & Round Roll Slicing",
-    desc: "Dedicated slicing configurations for toast bread and round rolls, tuned for uniform thickness and clean cuts.",
+    icon: BarChart3,
+    title: "Production Requirements",
+    desc: "Consider the quantity of products that needs to be processed during regular operations.",
   },
   {
     num: "03",
-    icon: CircleDot,
-    title: "Cake Cutting & Slicing",
-    desc: "Machines built to handle cake bars and slabs with gentle, precise cutting that preserves product quality.",
+    icon: Ruler,
+    title: "Slicing Requirements",
+    desc: "Evaluate the required slice size, product shape and consistency.",
   },
   {
     num: "04",
-    icon: Boxes,
-    title: "Bakery Equipment",
-    desc: "Spiral and planetary mixers, rotary ovens, dough dividers and moulders engineered for daily production reliability.",
+    icon: Maximize,
+    title: "Available Space",
+    desc: "Check whether the machine can be accommodated within your existing production facility.",
   },
   {
     num: "05",
-    icon: FileCog,
-    title: "Turnkey Bakery Projects",
-    desc: "End-to-end project consultancy — from machinery selection to layout — for bread, cake and toast production lines.",
+    icon: Settings,
+    title: "Operating Requirements",
+    desc: "Understand the machine's working process and suitability for your bakery operations.",
   },
 ];
 
@@ -39,13 +39,36 @@ export default function Expertise() {
     <section id="expertise" className="relative py-24 bg-ink text-white overflow-hidden">
       <div className="grid-bg absolute inset-0 opacity-40" />
       <div className="max-w-content mx-auto px-6 relative">
-        <Reveal className="max-w-[640px] mb-12">
+        <Reveal className="max-w-[820px] mb-12">
           <span className="eyebrow inline-flex items-center gap-2.5 text-[12.5px] tracking-[0.14em] font-semibold text-[#e8a184]">
             OUR EXPERTISE
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4 text-white">
-            Precision engineering for every stage of bakery production
+            Specialized Bakery Machines for Commercial Production
           </h2>
+          <div className="space-y-4 text-[15.5px] text-[#c9c4bb] leading-relaxed">
+            <p>
+              Commercial bakeries require appropriate machinery to manage their daily production
+              activities. As production requirements increase, manual processing can become
+              time-consuming and difficult to manage consistently. Suitable bakery equipment helps
+              businesses organize their operations and handle specific production tasks more
+              efficiently.
+            </p>
+            <p>
+              Different bakery products also require different types of machinery. Bread slicing,
+              toast slicing, cake cutting and round roll slicing involve separate processing
+              requirements. Therefore, selecting a machine according to the product application is
+              important.
+            </p>
+            <p>
+              J. S. Engineering offers specialized bakery machines to address these requirements. Our
+              range covers different slicing applications and helps businesses identify equipment
+              according to their production needs.
+            </p>
+            <p className="text-white font-semibold">
+              When selecting bakery machinery, businesses should consider the following factors:
+            </p>
+          </div>
         </Reveal>
 
         <Reveal>
@@ -61,6 +84,13 @@ export default function Expertise() {
               </div>
             ))}
           </div>
+        </Reveal>
+
+        <Reveal>
+          <p className="mt-8 text-[15.5px] text-[#c9c4bb] leading-relaxed max-w-[820px]">
+            Considering these factors before purchasing equipment can help businesses make a more
+            suitable machinery selection.
+          </p>
         </Reveal>
       </div>
     </section>

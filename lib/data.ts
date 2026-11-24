@@ -4,88 +4,120 @@ export type TopProduct = {
   tag: string;
   image: string;
   imageFit?: "cover" | "contain";
+  details: string[];
 };
 
 export const topProducts: TopProduct[] = [
   {
     name: "High Speed Bread Slicer",
-    description: "High-throughput slicing for continuous bread production lines.",
+    description: "Designed for bakeries that need to slice bread efficiently during regular production.",
     tag: "BEST SELLER",
     image: "/high-speed-bread-slicer.webp",
+    details: [
+      "A High Speed Bread Slicer is designed for bakeries that need to slice bread efficiently during regular production. Bread slicing is an important stage in commercial bakery operations, particularly when products need to be prepared for packaging and distribution.",
+      "This machine helps streamline the bread slicing process and supports businesses handling regular bread production. It is suitable for commercial bakeries and bread manufacturing units looking for dedicated bread slicing equipment.",
+      "Before selecting a bread slicer, businesses should consider their daily production requirements, bread dimensions and desired slicing specifications. These factors help determine whether a particular machine is suitable for their production process.",
+    ],
   },
   {
     name: "High Speed Toast Slicer",
-    description: "Uniform toast-thickness slicing built for daily bakery volumes.",
+    description: "Specialized equipment for consistent toast slicing ahead of handling, packaging and distribution.",
     tag: "POPULAR",
     image: "/high-speed-toast-slicer.webp",
+    details: [
+      "The High Speed Toast Slicer is designed for bakery businesses that require specialized equipment for toast slicing. Toast products need consistent slicing to support further handling, packaging and distribution.",
+      "Using a dedicated toast slicing machine can help organize this stage of bakery production. It is suitable for commercial bakeries and food production units that regularly manufacture toast products.",
+      "When choosing a toast slicer, businesses should evaluate their production volume, product dimensions and slicing requirements. Selecting suitable equipment can help maintain an organized production workflow.",
+    ],
   },
   {
     name: "Gravity Bread Slicer",
-    description: "Simple, reliable gravity-feed slicing for compact bakery setups.",
+    description: "Bread slicing through a gravity-based feeding mechanism.",
     tag: "COMPACT",
     image: "/gravity-slicer.webp",
+    details: [
+      "The Gravity Bread Slicer is designed for bread slicing through a gravity-based feeding mechanism. It provides a specialized option for bakeries looking for equipment suited to their bread processing requirements.",
+      "Different bakery businesses may have different production volumes and operating preferences. Therefore, it is important to understand the working mechanism and application of a bread slicing machine before making a purchase.",
+      "J. S. Engineering offers Gravity Bread Slicers as part of its machinery range, giving businesses another option to consider for their bread slicing operations.",
+    ],
   },
   {
     name: "Cake Slicing Machine",
-    description: "Precise, gentle cutting for cake bars and slabs at scale.",
+    description: "Cuts cakes into portions for further handling, packaging or display.",
     tag: "PRECISION",
     image: "/high-speed-cake-slicer.webp",
+    details: [
+      "A Cake Slicing Machine is designed to cut cakes into portions for further handling, packaging or display. Cake slicing requires attention to portion size and cutting consistency, particularly for businesses involved in regular cake production.",
+      "Commercial bakeries and cake manufacturers can consider dedicated cake slicing equipment according to their product types and production requirements.",
+      "Before selecting a cake slicing machine, businesses should evaluate the dimensions of their cakes, required portion sizes and expected production volume. These considerations help identify suitable equipment for their cake processing operations.",
+    ],
   },
   {
     name: "Round Roll Slicing Machine",
-    description: "Dedicated configuration for slicing round rolls and buns.",
+    description: "Developed for bakery businesses that manufacture and process round rolls.",
     tag: "SPECIALIST",
     image: "/High-Speed-Round-Roll-Toast-Slicing-Machine.webp",
+    details: [
+      "The Round Roll Slicing Machine is developed for bakery businesses that manufacture and process round rolls. Since round bakery products have a different shape from regular bread loaves, they may require equipment designed specifically for their slicing application.",
+      "This machine helps businesses address their round roll slicing requirements as part of their regular production process. It is relevant for commercial bakeries and food production units manufacturing round bakery products.",
+      "When selecting this machine, businesses should consider the dimensions of their rolls, desired slicing results and production requirements.",
+    ],
   },
   {
     name: "Bakery Projects & Consultancy",
-    description: "End-to-end layout, machinery selection and turnkey project support.",
+    description: "Support with bakery setup planning and machinery requirements.",
     tag: "CONSULTANCY",
     image: "/consultaion.webp",
     imageFit: "contain",
+    details: [
+      "Starting a new bakery production unit or planning to improve an existing facility requires proper machinery selection and production planning. Businesses need to understand which machines are required for their products and how different equipment fits into their production setup.",
+      "J. S. Engineering also provides Bakery Projects & Consultancy to support businesses with their bakery setup planning and machinery requirements.",
+      "This service can be useful for entrepreneurs planning a commercial bakery, existing bakery owners considering production expansion and businesses evaluating machinery for specific bakery applications.",
+      "Understanding the production process before purchasing equipment can help businesses plan their machinery requirements more effectively.",
+    ],
   },
 ];
 
 export const faqs = [
   {
     q: "Who is the best bakery machine manufacturer in Delhi?",
-    a: "J. S. Engineering is one of the most experienced bakery machine manufacturers in Delhi. We've been building bakery machinery since 1948 from Wazirpur Industrial Area, and we supply bakeries across India and abroad.",
+    a: "J. S. Engineering is an established bakery machine manufacturer in Delhi with manufacturing experience dating back to 1948. The company offers bread slicers, toast slicers, cake slicing machines and other specialized bakery equipment.",
   },
   {
-    q: "Where can I buy a bread slicing machine in Delhi?",
-    a: "You can buy directly from us at J. S. Engineering, C-57, Wazirpur Industrial Area, Delhi 110052. Tell us about your bakery, and we'll suggest the right machine and send you a quotation.",
+    q: "Where can I find a bakery machine manufacturer in Delhi?",
+    a: "You can contact J. S. Engineering at C-57, Wazirpur Industrial Area, Delhi – 110052, to explore its bakery machinery range and discuss your business requirements.",
   },
   {
-    q: "What does a bakery machine manufacturer do?",
-    a: "A bakery machine manufacturer designs and builds the equipment bakeries use every day, such as slicers, mixers, ovens and dough dividers. At J. S. Engineering, we also customize machines and help new bakeries plan their production lines.",
+    q: "What types of bakery machines does J. S. Engineering offer?",
+    a: "J. S. Engineering offers High Speed Bread Slicers, High Speed Toast Slicers, Gravity Bread Slicers, Cake Slicing Machines, Round Roll Slicing Machines and Bakery Projects & Consultancy.",
   },
   {
-    q: "What is a bread slicing machine and how does it work?",
-    a: "A bread slicing machine cuts a loaf into even slices using precisely set blades. The bread goes in either automatically or by gravity feed, and the blades cut it to a fixed thickness. It saves time, cuts down wastage and keeps every slice uniform.",
+    q: "Which machine is suitable for commercial bread slicing?",
+    a: "A High Speed Bread Slicer is designed for commercial bread slicing applications. The suitable machine depends on your bread dimensions, production volume and slicing requirements.",
   },
   {
-    q: "How much does a bread slicing machine cost in India?",
-    a: "It depends on the capacity, the model, the blade setup and whether you choose stainless steel. A gravity slicer and a high-speed automatic machine are priced very differently. Share your requirements with us and we'll give you an exact quotation.",
+    q: "What is the difference between a High Speed Bread Slicer and a Gravity Bread Slicer?",
+    a: "A High Speed Bread Slicer is designed for high-speed bread slicing applications, while a Gravity Bread Slicer uses a gravity-based feeding mechanism. The choice depends on your production requirements and preferred machine application.",
   },
   {
-    q: "What is the capacity of a high-speed bread slicer?",
-    a: "Our high-speed bread slicers can slice up to 65 breads per minute. The exact output depends on the model, loaf size and configuration, so we recommend a machine based on your daily production target.",
+    q: "Which machine is used for slicing toast?",
+    a: "A High Speed Toast Slicer is designed specifically for toast slicing requirements in commercial bakeries and food production units.",
   },
   {
-    q: "Which machine is best for slicing toast bread?",
-    a: "A high-speed toast slicing machine is the best choice, because it keeps the thickness even on every slice. We make toast slicers, including stainless steel models, and round roll slicers for buns.",
+    q: "Can a cake slicing machine be used in commercial bakeries?",
+    a: "Yes, a Cake Slicing Machine is designed for cake portioning applications and can be considered by commercial bakeries and cake manufacturers according to their production needs.",
   },
   {
-    q: "How do I choose the right bakery machine for my bakery?",
-    a: "Start with four questions. How many breads do you produce per minute or per day? What are your loaf size and type? How much floor space do you have? Do you need automatic or gravity feed? Our team can help you decide based on your answers.",
+    q: "Does J. S. Engineering provide bakery project consultancy?",
+    a: "Yes, J. S. Engineering offers Bakery Projects & Consultancy to help businesses understand their bakery setup and machinery requirements.",
   },
   {
-    q: "Can a bakery machine manufacturer in Delhi supply machines outside India?",
-    a: "Yes. J. S. Engineering supplies bakery machinery across India and exports to international customers as well. Share your location and requirements, and we'll guide you on the next steps.",
+    q: "What should I consider before purchasing bakery machinery?",
+    a: "Consider the product application, production volume, machine specifications, available space, operating requirements and suitability for your bakery products.",
   },
   {
-    q: "How can I get a quotation or set up a new bakery plant?",
-    a: "Use the Get a Quote button on our website and tell us what you need. We also offer project consultancy, covering machinery selection, layout planning and turnkey support for bread, cake and toast production lines.",
+    q: "How can I get a quotation for bakery machines from J. S. Engineering?",
+    a: "You can contact J. S. Engineering through its website or visit its Wazirpur Industrial Area facility in Delhi to discuss your machinery requirements and request product details or a quotation.",
   },
 ];
 

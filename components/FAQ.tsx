@@ -16,7 +16,7 @@ export default function FAQ() {
             FAQ
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
-            Frequently asked questions
+            Frequently Asked Questions
           </h2>
         </Reveal>
 
