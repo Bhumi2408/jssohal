@@ -69,9 +69,9 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li><a href="#products" className="text-sm hover:text-white transition-colors">Bread Slicing Machines</a></li>
               <li><a href="#products" className="text-sm hover:text-white transition-colors">Toast Slicing Machines</a></li>
-              <li><a href="#range" className="text-sm hover:text-white transition-colors">Gravity Slicers</a></li>
+              <li><a href="#products" className="text-sm hover:text-white transition-colors">Gravity Slicers</a></li>
               <li><a href="#products" className="text-sm hover:text-white transition-colors">Cake Slicing Machines</a></li>
-              <li><a href="#range" className="text-sm hover:text-white transition-colors">Bakery Equipment</a></li>
+              <li><a href="#products" className="text-sm hover:text-white transition-colors">Bakery Equipment</a></li>
             </ul>
           </div>
 

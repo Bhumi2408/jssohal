@@ -33,7 +33,7 @@
 ## Key pages
 
 - [Home](https://bakerymachinemanufacturer.com/): Overview of J. S. Engineering, a bakery machine manufacturer in Delhi NCR
-- [About and heritage](https://bakerymachinemanufacturer.com/#range): Company history since 1948
+- [About us](https://bakerymachinemanufacturer.com/#about): Company history since 1948
 - [Why choose J. S. Engineering](https://bakerymachinemanufacturer.com/#why)
 - [How to select bakery machinery](https://bakerymachinemanufacturer.com/#selection-guide)
 - [FAQ](https://bakerymachinemanufacturer.com/#faq): Common questions about bakery machines and the company

@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="pt-24 pb-24">
+    <section id="intro" className="pt-24 pb-24">
       <div className="max-w-content mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
         <Reveal className="relative hidden md:block">
           <Image
@@ -18,7 +18,7 @@ export default function About() {
 
         <Reveal delay={0.1}>
           <span className="eyebrow inline-flex items-center gap-2.5 text-[12.5px] tracking-[0.14em] font-semibold text-ember">
-            ABOUT J. S. ENGINEERING
+            SINCE 1948 · DELHI NCR
           </span>
           <h1 className="font-display font-extrabold leading-[1.15] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
             Bakery Machine Manufacturer in Delhi NCR – J. S. Engineering
@@ -59,24 +59,11 @@ export default function About() {
             engineer machines around real production needs.&rdquo;
           </div>
           <a
-            href="#range"
+            href="#about"
             className="inline-flex items-center gap-2.5 border border-black/10 hover:border-ink text-ink font-semibold px-6 py-3.5 rounded-md transition-colors group"
           >
             Discover Our Story <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
-
-          <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 mt-8 border-t border-black/10 pt-6">
-            {[
-              { year: "1948", label: "Foundation, by S. Jaswant Singh Sohal" },
-              { year: "1970s", label: "Bread slicing innovation, 2nd generation" },
-              { year: "Today", label: "Advanced bakery machinery, 3rd generation" },
-            ].map((t) => (
-              <div key={t.year} className="flex-1 relative pr-5 before:content-[''] before:absolute before:-top-[25px] before:left-0 before:w-[38px] before:h-[2px] before:bg-ember before:hidden sm:before:block">
-                <b className="block font-display font-extrabold text-[17px]">{t.year}</b>
-                <span className="text-[13px] text-steel">{t.label}</span>
-              </div>
-            ))}
-          </div>
         </Reveal>
       </div>
     </section>

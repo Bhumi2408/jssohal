@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 
 export default function Heritage() {
   return (
-    <section id="range" className="py-24 bg-paper-2">
+    <section id="about" className="py-24 bg-paper-2">
       <div className="max-w-content mx-auto px-6">
         <Reveal className="max-w-[820px] mx-auto text-center mb-12">
           <span className="eyebrow inline-flex items-center gap-2.5 text-[12.5px] tracking-[0.14em] font-semibold text-ember">
-            OUR HERITAGE
+            ABOUT US
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
             About J. S. Engineering – Bakery Machinery Manufacturing Since 1948
@@ -47,6 +47,19 @@ export default function Heritage() {
             height={1024}
             className="w-full h-auto rounded-2xl border border-black/10"
           />
+        </Reveal>
+
+        <Reveal className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+          {[
+            { year: "1948", label: "Foundation, by S. Jaswant Singh Sohal" },
+            { year: "1970s", label: "Bread slicing innovation, 2nd generation" },
+            { year: "Today", label: "Advanced bakery machinery, 3rd generation" },
+          ].map((t) => (
+            <div key={t.year} className="bg-white border border-black/10 border-t-[3px] border-t-ember rounded-xl px-6 py-5">
+              <b className="block font-display font-extrabold text-[19px]">{t.year}</b>
+              <span className="text-[13.5px] text-steel">{t.label}</span>
+            </div>
+          ))}
         </Reveal>
       </div>
     </section>

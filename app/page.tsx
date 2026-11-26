@@ -58,11 +58,11 @@ export default function Home() {
       <Expertise />
       <TopProducts />
       <WhyChooseUs />
-      <WhoUses />
+      {/* <WhoUses /> */}
       <SelectionGuide />
-      <CTA />
+      {/* <CTA /> */}
       <Testimonials />
-      <BakeryIntro />
+      {/* <BakeryIntro /> */}
       <FAQ />
       <Clients />
       <ContactForm />

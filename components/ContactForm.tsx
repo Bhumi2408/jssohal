@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { MapPin, Phone, MessageCircle, Send, CheckCircle2, Loader2 } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Send, CheckCircle2, Loader2, ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
 import { COMPANY, topProducts } from "@/lib/data";
 import { submitToWeb3Forms } from "@/lib/web3forms";
@@ -197,6 +197,29 @@ export default function ContactForm() {
           )}
         </Reveal>
       </div>
+
+       <Reveal className="mt-6 max-w-content mx-auto bg-paper-2 border border-black/10 rounded-2xl p-8 sm:p-10 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+          <div className="flex-1">
+            <h2 className="font-display font-extrabold leading-[1.15] tracking-tight text-[24px] sm:text-[28px] lg:text-[30px] mb-4">Let&apos;s Talk About Your Bakery</h2>
+            <div className="space-y-3 text-[15.5px] text-[#4a453e] leading-relaxed">
+              <p>
+                Tell us what you bake, how much you make in a day and how much space you have. We&apos;ll
+                suggest a machine that fits, and give you a clear quotation without the pressure or the
+                confusing jargon.
+              </p>
+              <p>
+                Use the Get a Quote button on this page, or find us at C-57, Wazirpur Industrial Area,
+                Delhi 110052.
+              </p>
+            </div>
+          </div>
+          <a
+            href="#contact"
+            className="self-start lg:self-center flex-none inline-flex items-center gap-2.5 bg-ember hover:bg-ember-dark text-white font-semibold px-7 py-4 rounded-md transition-colors group"
+          >
+            Get a Quote <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+          </a>
+        </Reveal>
     </section>
   );
 }

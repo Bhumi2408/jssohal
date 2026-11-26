@@ -136,9 +136,9 @@ export const megaMenuLinks = [
   { label: "Toast Slicing Machines", href: "#products" },
   { label: "Gravity Bread Slicers", href: "#products" },
   { label: "Cake Slicing Machines", href: "#products" },
-  { label: "Round Roll Slicing Machines", href: "#range" },
-  { label: "Small Bakery Equipment", href: "#range" },
-  { label: "Bakery Machinery", href: "#range" },
+  { label: "Round Roll Slicing Machines", href: "#products" },
+  { label: "Small Bakery Equipment", href: "#products" },
+  { label: "Bakery Machinery", href: "#products" },
   { label: "Project Consultancy", href: "#expertise" },
 ];
 
