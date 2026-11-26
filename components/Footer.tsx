@@ -47,10 +47,6 @@ export default function Footer() {
               <Phone size={17} className="text-ember flex-none mt-0.5" />
               <span>{COMPANY.phone}</span>
             </div>
-            <div className="flex gap-2.5 text-sm mb-3.5">
-              <Mail size={17} className="text-ember flex-none mt-0.5" />
-              <span>[add your business email]</span>
-            </div>
           </div>
 
           <div>
