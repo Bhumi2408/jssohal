@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/data";
+import EnquiryPopup from "@/components/EnquiryPopup";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -56,7 +57,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
-      <body className="font-body antialiased overflow-x-hidden">{children}</body>
+      <body className="font-body antialiased overflow-x-hidden">
+        {children}
+        <EnquiryPopup />
+      </body>
     </html>
   );
 }
